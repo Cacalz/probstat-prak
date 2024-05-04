@@ -1,0 +1,10 @@
+library(ggplot2)
+data_calista = read.csv("clipboard", sep = ",")
+qplot(data_calista$AmountSpent, data_calista$Salary)
+plot(data_calista$AmountSpent, data_calista$Salary)
+hist(data_calista$AmountSpent)
+d=density(data_calista$AmountSpent)
+plot(d)
+
+data_calistaazzahra = read.csv("clipboard", sep = ",")
+plot(data_calistaazzahra$Price, data_calistaazzahra$SqFt, xlab = "SqFt", ylab = "price")
